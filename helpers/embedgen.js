@@ -61,4 +61,17 @@ const genEmbed = (newItem, oldItem) => {
   return embed;
 };
 
+const error = (embed = new discord.MessageEmbed()
+  .setColor("#D2261E")
+  .setAuthor(
+    "Price Check Bot",
+    "https://news.bitcoin.com/wp-content/uploads/2017/09/product_oldschoolgold-500x500-300x300.png"
+  )
+  .setTitle(":warning:   Uh Oh!   :warning:")
+  .setDescription(
+    "There seems to have been an error finding this item! It may be untradeable, or simply non-existant."
+  )
+  .setFooter("By Broomstick and Shyrogan"));
+
+exports.errorEmbed = error;
 exports.genEmbed = genEmbed;

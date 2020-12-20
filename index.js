@@ -22,9 +22,7 @@ client.on("message", async (message) => {
   console.log("Generating embed...");
 
   if (itemSearched == null) {
-    message.channel.send(
-      "No item was found by that name! The item may be untradeable or you may have made a typo."
-    );
+    message.channel.send(embed.errorEmbed);
   } else if (itemSearched[0] == undefined) {
     message.channel.send(embed.genEmbed(itemSearched, null));
   } else {
