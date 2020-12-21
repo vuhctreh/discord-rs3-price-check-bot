@@ -1,5 +1,5 @@
 # discord-rs3-price-check-bot
-###Gets the GE price of items via the Runescape wiki.
+### Gets the GE price of items via the Runescape wiki.
 
 Small project done for fun; may or may not be updated in the future.
 
